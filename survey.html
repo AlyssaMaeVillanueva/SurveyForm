@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN FORM</title>
+    <link rel="stylesheet" href="survey.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@100&family=Roboto&display=swap" rel="stylesheet">  
+</head>
+  
+<body>
+                         
+  <header class="head"> 
+
+    <h1 id="title">TUPV Student Survey form </h1> 
+  <p id= "description">
+    Thank you for taking the time to help us improve the online class learning platform</p>
+   </header>
+<main>
+<form id="survey-form" style=> 
+    <div class="form-group">
+    <label for="name" id="name-label"> Name: </label>
+    <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required>
+    </div>
+    <label id= "email-label"for="email" class="form-group"> Email:</label>
+    <input id="email" type="email" name="email"class="form-control" placeholder="Enter your email" required>
+    <div clas="form-group">
+    <label id="number-label" for="email" class="form-group"> Age:</label>
+    <input id="number" type="number"class="form-control" min ="15"max="25"name="number" placeholder="Age" required>
+     </div>
+    <div class="form-group">
+    <label id="dropdown-label"for="dropdown"> Which option greatly affects your learning?</label>
+    <select id="dropdown" class="form-control" required> <br>
+      <option disabled="" selected="" value="">Select problems</option>
+      <option value="Internet Connection">Internet Connection </option>
+      <option value="Devices"> Devices</option>
+      <option value="Finances Stability"> Financial Stability </option>
+      <option value="Work Environment"> Work Environment</option>
+      <option value="Instructors"> Instructors</option>
+      <option value="Modules"> Modules</option>
+      <option value="Others"> Others</option>
+    </select>
+    </div>
+    <p >Would you still enrol yourself in the next semester? </p>
+    <div class="form-group"> 
+       <input name="user-rcommend" class="choose"type="radio"value="Yes" ><label for="radio-btn">  Yes
+      </label> <br>
+       <input name="user-rcommend" class="choose" type="radio"value="No" >   <label for="radio-btn"> No
+      </label> <br>
+      <input name="user-rcommend" class="choose" type="radio"value="Maybe" >   <label for="radio-btn"> Maybe
+      </label>
+      
+    </div>
+    <div class="form=group"> 
+      <p >What would you like to address? </p>
+    <label>
+      <input name="prefer" value="Time scheduled" type="checkbox" class="input-checkbox">Schedule
+  </label>
+      <label>
+      <input name="prefer" class="input-checkbox" value="Uploading of modules" type="checkbox" class="input-checkbox">Uploading of modules</label>
+  <label>
+       <input name="prefer" value="Deadlines" type="checkbox" class="input-checkbox">Deadlines</label>
+   <label>   
+      <input name="prefer" value="Activities" type="checkbox" class="input-checkbox">Activities</label>
+      <label> 
+       <input name="prefer" value="School app" type="checkbox" class="input-checkbox">School app</label>
+       <label>
+       <input name="prefer" value="Grades" type="checkbox" class="input-checkbox">Grades</label>
+    </div>
+<div class="form-group"> 
+<p>What would you like to improve? </p>
+    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your suggestions here..."></textarea>
+</div>
+<div class= "form-group"> 
+<button type="submit" id="submit" class="submit-button">
+      Submit
+    </button>
+</div>
+      
+  </form> 
+
+</main>
+  <footer>
+  
+      </footer>
+
+  
+</body>
+</html>
